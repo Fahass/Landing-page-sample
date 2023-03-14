@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+            <!----------------Navbar-------------------->
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./Images/favicon.png" alt="logo-img">
+            </div>
+            <div class="bar-lines">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <!----------------hero section------------------>
+
+        <div class="home-page" id="home">
+            <h1>Having a bad time?</h1>
+            <h3>No worries flexer got you ✌!</h3>
+            <a href="">Dive right in</a>
+        </div>
+    </div>
+
+            <!--------------services section------------------>
+
+    <div class="services" id="services">
+        <h2>our services</h2>
+        <h4>In Flexer we offer services for:</h4>
+        <div class="boxes">
+            <div class="box-item">
+                <img src="./Images/briefcase-9-256.png" alt="">
+                <h3>profesionals</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+            </div>
+            <div class="box-item">
+                <img src="./Images/headset-256.png" alt="">
+                <h3>amateurs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+            </div>
+            <div class="box-item">
+                <img src="./Images/star.png" alt="">
+                <h3>for everyone</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+            </div>
+        </div>
+    </div>
+
+            <!------------------Blog section------------------>
+
+    <div class="blog" id="blog">
+        <h2>Blog</h2>
+        <div class="articles">
+            <div class="artc">
+                <img src="./Images/article3.jpeg" alt="">
+                <h3>fully layered pages</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+                <a href="" target="_blank">Check this out &xrArr;</a>
+            </div>
+            <div class="artc">
+                <img src="./Images/compatable.jpeg" alt="">
+                <h3>full compatability</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+                <a href="" target="_blank">Check this out &xrArr;</a>
+            </div>
+            <div class="artc">
+                <img src="./Images/responsive.jpeg" alt="">
+                <h3>fully responsive</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+                <a href="" target="_blank">Check this out &xrArr;</a>
+            </div>
+            <div class="artc">
+                <img src="./Images/article2.jpeg" alt="">
+                <h3>great modules</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+                <a href="" target="_blank">Check this out &xrArr;</a>
+            </div>
+            <div class="artc">
+                <img src="./Images/article1.jpeg" alt="">
+                <h3>tempaltes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam ex? Dignissimos facere quos exercitationem repellat iure suscipit.</p>
+                <a href="" target="_blank">Check this out &xrArr;</a>
+            </div>
+        </div>
+    </div>
+
+            <!--------------contact section------------------>
+
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <h4>You can contact us by filling the form below</h4>
+        <form action="post">
+            <input type="text" placeholder="Enter Your Name">  <br>
+            <input type="Mail" placeholder="Enter Your Email"> <br>
+            <textarea name="text"cols="30" rows="10">Message</textarea> <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; DESIGNED AND DEVELOPED BY UMAR FAROUK</p>
+    </footer>
+
+    <script>
+        var nav = document.querySelector('.navbar')
+        var lines = document.querySelector('.bar-lines')
+        var links = document.querySelector('.links')
+        var line1 = document.getElementById('line1')
+        var line2 = document.getElementById('line2')
+        var line3 = document.getElementById('line3')
+        var home = document.querySelector('.home-page')
+
+        lines.addEventListener("click", function(){
+            line1.classList.toggle('active')
+            line2.classList.toggle('active')
+            line3.classList.toggle('active')
+            links.classList.toggle('active')
+            home.classList.toggle('active')
+        })
+        links.addEventListener("click", function(){
+            line1.classList.remove('active')
+            line2.classList.remove('active')
+            line3.classList.remove('active')
+            links.classList.remove('active')
+            home.classList.remove('active')
+        })
+        window.addEventListener("scroll", function(){
+            if(document.documentElement.scrollTop>500){
+                nav.style.background = "#c5c4c4";
+            }
+            else{nav.style.background = "transparent"};
+        })
+    </script>
+</body>
+</html>
