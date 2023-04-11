@@ -79,6 +79,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+     line-height: 1.7;
   }
 }
 
@@ -89,7 +90,6 @@
   border-radius: .2rem;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  margin: 10px 0;
 }
 
 .wrapper nav .links {
