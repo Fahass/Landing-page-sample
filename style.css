@@ -90,6 +90,7 @@
   border-radius: .2rem;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  padding: .3rem;
 }
 
 .wrapper nav .links {
